@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Release.Name }}
+data:
+  REDIS_URL: "{{ .Values.global.redisUrl }}"
+  MONGO_URL: "{{ .Values.global.mongoUrl }}"
+  {{- range $key, $val := .Values.global.env }}
+  {{ $key }}: {{ $val | quote }}
+  {{- end }}

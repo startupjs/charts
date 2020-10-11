@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: {{ .Release.Name }}
+  labels:
+    app: {{ .Release.Name }}
+  annotations:
+    kubernetes.io/ingress.allow-http: "true"
+    kubernetes.io/ingress.class: gce
+    kubernetes.io/ingress.global-static-ip-name: {{ .Values.global.staticIpName }}
+spec:
+  backend:
+    serviceName: "{{ .Release.Name }}-server"
+    servicePort: 80
+# TODO:
+#  tls:
+#  - secretName: secretName

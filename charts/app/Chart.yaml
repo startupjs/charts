@@ -1,0 +1,8 @@
+apiVersion: v2
+name: app
+version: 0.0.4
+description: Full configuration of one StartupJS app infrastructure in Kube cluster
+dependencies:
+- name: server
+  version: 0.0.2
+  repository: "https://startupjs.github.io/charts"
