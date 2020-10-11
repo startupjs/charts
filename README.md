@@ -11,7 +11,7 @@ The `app` chart is currently designed to work specifically with `Google Cloud`.
 Add the Repository to Helm:
 
 ```sh
-helm repo add startupjs https://startupjs.github.com/charts
+helm repo add startupjs https://startupjs.github.io/charts
 ```
 
 ### `app`
