@@ -1,0 +1,12 @@
+apiVersion: v1
+entries:
+  server:
+  - apiVersion: v2
+    created: "2020-10-11T23:19:18.610938+03:00"
+    description: Handles the majority of client requests and websocket connections
+    digest: da54ebe3306ca4ff7f14831ff9609165fb758de0adb8c45664181abf12b95a0f
+    name: server
+    urls:
+    - https://github.com/startupjs/charts/releases/download/server-0.0.2/server-0.0.2.tgz
+    version: 0.0.2
+generated: "2020-10-11T23:19:18.324259+03:00"
